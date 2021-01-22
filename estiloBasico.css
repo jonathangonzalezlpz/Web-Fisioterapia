@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F8F7F5;
+    font-family: Geneva,sans-serif,Arial, Helvetica, sans-serif;
+    overflow: scroll;
+    border:3px solid #506A00;
+    min-height:100vh;
+    font-weight:normal;
+}
+#iconoform{
+    position:fixed;
+    top:90px;
+    left:3px;
+    z-index:1;
+}
+nav{
+    z-index:1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height:50px;
+    background-color: #506A00D9;
+}
+
+nav li {
+    position:relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        nav li a:hover:not(.active) {
+            background-color: #3D3D35;
+        }
+#serviciosBienestar {
+    display: block;
+    color: white;
+    width:220px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+    #serviciosBienestar:hover:not(.active) {
+        background-color: #3D3D35;
+    }
+
+    #serviciosBienestar ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width:220px;
+        height: auto;
+        background-color: #97B144;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+    }
+
+        #serviciosBienestar ul li {
+            float: none;
+            width: 220px;
+        }
+
+    #serviciosBienestar ul a {
+        line-height:120%;
+        padding:10px 15px;
+        color: #3D3D35;
+    }
+
+        #serviciosBienestar ul a:hover {
+            color: #F8F7F5;
+            background-color: #193407;
+        }
+
+#serviciosBienestar:hover ul {
+    display: block
+}
+
+.active {
+    background-color: #97B144;
+}
+
+.enlaceboton {
+    font-family: verdana, arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #A66D6D;
+    color: #F8F7F5;
+    text-decoration: none;
+}
+
+    .enlaceboton:link, .enlaceboton:visited {
+        border-top: 1px solid #cccccc;
+        border-bottom: 2px solid #666666;
+        border-left: 1px solid #cccccc;
+        border-right: 2px solid #666666;
+    }
+
+    .enlaceboton:hover {
+        border-bottom: 1px solid #cccccc;
+        border-top: 2px solid #666666;
+        border-right: 1px solid #cccccc;
+        border-left: 2px solid #666666;
+        background-color: #BFA78A;
+        color:#3D3D35;
+    }
+footer {
+    width: 100%;
+    padding-right:3px;
+    height: auto;
+    overflow: hidden;
+    background-color: #506A00D9;
+}
+
+#pie1 {
+    float: left;
+    width: 20%;
+}
+
+#iconos {
+    max-width: 80%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    display: block;
+    padding: 2px;
+    border: 2px solid grey;
+    display: inline-block;
+    position: relative;
+    background-color: #97B144;
+}
+
+.pie {
+    float: left;
+    padding-top: 10px;
+    width: 40%;
+    color: white;
+    height: auto;
+    overflow: hidden;
+}
+
+#pie2 {
+    padding-left: 5px;
+}
+
+    #pie2 h1 {
+        font-size: 14pt;
+        color: #3D3D35;
+    }
+
+    #pie2 h2, #pie2 h3 {
+        padding-left: 12px;
+        font-size: 11pt;
+    }
+
+#pie3 {
+    max-width:400px;
+    padding-left: 25px;
+    padding-right: 8px;
+    padding-bottom:12px;
+    background-color: #97B144;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:20px;
+    float:right;
+}
+
+    #pie3 h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16pt;
+        color: #A66D6D;
+    }
+
+    #pie3 h2 {
+        font-size:11pt;
+    }
+    #pie3 form {
+        font-size: 11pt;
+    }
+
+    #pie3 fieldset {
+        width: 80%;
+        background-color: #BFA78A;
+    }
+    #enlacebotonform {
+        font-family: verdana, arial, sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        padding: 4px;
+        background-color: #193407;
+        color: #F8F7F5;
+        text-decoration: none;
+        margin-top:3px;
+    }
+    #enlacebotonform:hover {
+        border-bottom: 1px solid #cccccc;
+        border-top: 2px solid #666666;
+        border-right: 1px solid #cccccc;
+        border-left: 2px solid #666666;
+        background-color: #97B144;
+        color: #3D3D35;
+    }

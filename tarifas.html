@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!--MetaEtiquetas-->
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Gonzalez Lopez">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="withd=device-withd, initial-scale=1, maximum-scale=1" user-scalable=no />
+
+	<title>Tarifas</title>
+	<link rel="stylesheet" href="estiloBasico.css">
+	<style>
+		.tarifasBonos {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			border: 1px solid;
+		}
+
+		#tarifas{
+			padding:10px;
+		}
+			#tarifas h1 {
+				color: #193407;
+				background-color:#97b14480;
+				padding:10px;
+			}
+			#tarifas ul{
+				width:50%;
+				min-width:400px;
+			}
+            #tarifas li {
+                padding: 10px;
+            }
+		#c2{
+			padding:10px;
+			height:auto;
+			overflow:hidden;
+		}
+            #c2 h1 {
+                color: #193407;
+                background-color: #97b14480;
+                padding: 10px;
+            }
+		#bonos {
+			width:50%;
+		}
+			#bonos ul{
+				width:100%;
+				position:relative;
+				float:left;
+				min-width:400px;
+			}
+			#bonos li{
+				padding:10px;
+			}
+        #mensaje {
+            position: relative;
+            float: left;
+            width: 50%;
+            color: #506A00;
+            font-size: x-large;
+            display: block;
+        }
+        scan {
+			font-size:xx-large;
+            color: #A66D6D;
+        }
+		#aviso{
+			width:440px;
+			position:absolute;
+			top:180px;
+			left: 50%;
+			background-color:#97B144;
+			border:2px solid #506A00;
+		}
+            #aviso h1 {
+                margin: 10px;
+                color: #A66D6D;
+            }
+		#aviso p{
+			padding:10px;
+			text-align:justify;
+		}
+		span{
+			font-weight:900;
+			color:#506A00;
+			font-size:large;
+		}
+        #especial {
+            font-weight: 900;
+            color: #A66D6D;
+			font-size:larger;
+        }
+
+	</style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="quienesSomos.html">Quienes Somos</a></li>
+				<li><a href="laClinica.html">La Clínica</a></li>
+				<li id="serviciosBienestar">
+					Servicios Bienestar
+					<ul>
+						<li><a href="osteopatia.html">Osteopatía</a></li>
+						<li><a href="fisioterapia.html">Fisioterapia</a></li>
+						<li><a href="bienestar.html">Bienestar y Cuidado</a></li>
+						<li><a href="medicinaDeportiva.html">Medicina Deportiva</a></li>
+					</ul>
+				</li>
+				<li><a href="tarifas.html" class="active">Tarifas</a></li>
+				<li><a href="pedirCita.html">Pedir Cita</a></li>
+			</ul>
+		</nav>
+	</header>
+	<a id="iconoform" href="#pie3"><img src="Imagen/mensajeIcono.png" width="60px" height="60px"></a>
+	<div class="tarifasBonos">
+		<div id="tarifas">
+			<h1>Tarifas</h1>
+			<hr>
+			<ul>
+				<li>Masaje Facial ---- <span>25,0€</span>(30mins) <span>40,0€</span>(60mins)</li>
+				<li>Masaje Circulatorio ---- <span>30,0€</span>(30mins) <span>40,0€</span>(60mins)</li>
+				<li>Masaje de Pies ---- <span>25,0€</span>(30mins) <span>40,0€</span>(60mins)</li>
+				<li>Masaje nuca y hombros ---- <span>20,0€</span>(25mins) <span>35,0€</span>(50mins)</li>
+				<li>Masaje digestivo ---- <span>40,0€</span>(40 mins) <span>60,0€</span>(60mins)</li>
+				<li>Masaje Placer ---- <span>30,0€</span>(20mins) <span>40,0€</span>(40mins)</li>
+				<li>Masaje Deportivo, Recuperación de lesiones ---- <span>70,0€</span>(40mins) <span>90,0€</span>(60mins)</li>
+				<li>Sauna de Vapor ---- <span>20,0€</span>(60mins)</li>
+				<li>Clase de pilates(50mins) ---- <span>10,0€</span></li>
+				<li>Primera evaluación ---- <span id="especial">GRATIS</span></li>
+				<li>Tratamiento de calor relax ---- <span>40,0€</span>(30mins)</li>
+			</ul>
+			<div id="aviso">
+				<h1>¡!</h1>
+				<p>Muchos de nuestros servicios no figurarán en la lista, ya que ofrecemos tratamientos y servicios muy personalizados, únicos para cada cliente y sus respectivas necesidades. Cualquier duda o consulta no dude en contactar con nostros por teléfono o través del formulario que encontrará en el pie de página.</p>
+			</div>
+		</div>
+		<div id="c2">
+			<h1>Ofertas y Bonos</h1>
+			<hr>
+			<div id="bonos">
+				<ul>
+					<li>Bono 5 sesiones de Masaje ---- <span id="especial">250,0€</span></li>
+					<li>Bono 3h de Sauna de vapor ---- <span id="especial">50,0€</span></li>
+					<li>Pack masaje para 2 ---- <span id="especial">40,0€</span></li>
+					<li>Bono Sensaciones (30 mins de sauna + Masaje Relax) ---- <span id="especial">70,0€</span></li>
+					<li>Pilates 1 mes (total 12 clases) ---- <span id="especial">56,0€</span></li>
+					<li>Pack Calor+Masaje ---- <span id="especial">60,0€</span>(60mins)</li>
+				</ul>
+			</div>
+			<div id="mensaje">
+				<p>"Una <scan>experiencia</scan> increíble para tus <scan>sentidos</scan>.<br><scan>Desconecta</scan> de tu rutina."</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div id="pie1">
+			<div id="iconos">
+				<a href="#"><img src="Imagen/facebook.png" alt="Icono Facebook" width="40px" height="40px"></a>
+				<a href="#"><img src="Imagen/whatsapp.png" alt="Icono Whatsapp" width="40px" height="40px"></a>
+				<a href="#"><img src="Imagen/telefono.png" alt="Icono Teléfono" width="40px" height="40px"></a>
+			</div>
+		</div>
+		<div id="pie2" class="pie">
+			<h1>Contacto:</h1>
+			<h2>888 88 88 88</h2>
+			<h2>666 66 66 66 (aceptamos citas por Whatsapp)</h2>
+			<h1>Dirección:</h1>
+			<h2>Calle Travesía de Vigo, Nº 113</h2>
+			<h3>Vigo, 36206, Pontevedra(España)</h3>
+			<h1>Horario:</h1>
+			<h2>Lunes a Viernes de 9:00-14:00 y de 16:00-22:00</h2>
+		</div>
+		<div id="pie3" class="pie">
+			<h1>DUDAS O CONSULTAS</h1>
+			<h2>Para cualquier duda o consulta cubra el siguiente formulario:</h2>
+			<form id='formulario' name='formulario' onsubmit="return validacion()" action="tarifas.html" method="post">
+				<fieldset>
+					<input type='text' size=40 name='nombre' placeholder='Nombre'><br>
+					<input type='text' size=9 name='telefono' placeholder="Teléfono">Quieres que te llamemos?<input type='radio' name="nm1"><br>
+					<textarea name='texto' rows=5 cols=30 placeholder="Introduce tu consulta o duda"></textarea><br>
+					<input class="enlaceboton" id="enlacebotonform" type='submit' name='enviar' value='Enviar'>
+				</fieldset>
+			</form>
+		</div>
+	</footer>
+	<script>function validacion() {
+			x = formulario.nombre.value
+			y = formulario.telefono.value
+			z = formulario.texto.value
+			if (x == "" || y == "") {
+				alert('Compruebe que ha introducido su nombre y su teléfono')
+				return false
+			}
+			if (z == "") {
+				alert("Debe rellenar el campo de texto con su consulta o duda.")
+				return false
+			}
+			alert('El formulario ha sido enviado con éxito, nos pondremos en contacto con usted lo antes posible.')
+			return (true)
+		}</script>
+</body>
+</html>

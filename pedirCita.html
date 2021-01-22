@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!--MetaEtiquetas-->
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Gonzalez Lopez">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="withd=device-withd, initial-scale=1, maximum-scale=1" user-scalable=no />
+
+	<title>PedirCita</title>
+	<link rel="stylesheet" href="estiloBasico.css">
+	<style>
+        .presentacion {
+            position: relative;
+            top: 0;
+            margin: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 1px solid;
+            height: auto;
+            overflow: hidden;
+			padding-bottom:12px;
+			height:80vh;
+			min-height:600px;
+        }
+
+		#contenido {
+			position: relative;
+			height:auto;
+			overflow:hidden;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+			#contenido h1 {
+				margin-left:auto;
+				margin-right:auto;
+				font-weight: bolder;
+				color: #193407;
+				background-color: #97B14480;
+				padding:10px;
+			}
+
+        #aviso {
+			font-size:large;
+            font-weight: bold;
+            color: #3D3D35;
+        }
+        #pedirCita {
+            width: 60%;
+            float: left;
+            min-height: 470px;
+            min-width: 600px;
+            background-color: #97B144;
+            padding: 10px;
+        }
+            #pedirCita h2 {
+                margin-top: 0;
+                font-weight: bold;
+                font-size: 17pt;
+                color: #193407;
+                text-align: center;
+            }
+            #pedirCita fieldset {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 2px solid #A66D6D;
+            }
+			#pedirCita p{
+				width:80%;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				font-weight:bold;
+			}
+        #img {
+            width: 40%;
+            float: left;
+            height: 470px;
+            background-color: #97B14480;
+        }
+		#img img{
+			position:relative;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="quienesSomos.html">Quienes Somos</a></li>
+				<li><a href="laClinica.html">La Clínica</a></li>
+				<li id="serviciosBienestar">Servicios Bienestar
+					<ul>
+						<li><a href="osteopatia.html">Osteopatía</a></li>
+						<li><a href="fisioterapia.html">Fisioterapia</a></li>
+						<li><a href="bienestar.html">Bienestar y Cuidado</a></li>
+						<li><a href="medicinaDeportiva.html">Medicina Deportiva</a></li>
+					</ul>
+				</li>
+				<li><a href="tarifas.html">Tarifas</a></li>
+				<li><a href="pedirCita.html" class="active">Pedir Cita</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="presentacion">
+		<div id="contenido">
+			<h1>Pida su cita</h1>
+			<h2 id="aviso">Si en lugar de una cita quiere preguntarnos alguna duda o realizar una consulta, cubra el formulario situado en el pie de página.</h2>
+			<div id="pedirCita">
+				<h2>Rellene el siguiente formulario.</h2>
+				<form id='cita' name='cita' onsubmit="return validacioncita()" action="osteopatia.html" method="post">
+					<fieldset>
+						<input type='text' size=40 name='nombreCita' placeholder='Nombre y Apellido'><br>
+						<input type='text' size=9 name='telefonoCita' placeholder="Teléfono"><br>
+						<h3>Tratamiento</h3>
+						<select name="Servicio" id="servicioSelect">
+							<option value="osteopatia">Osteopatía</option>
+							<option value="fisioterapia">Fisioterapia</option>
+							<option value="bienestar">Bienestar y Cuidado</option>
+							<option value="deportiva">Medicina Deportiva</option>
+						</select><br>
+						<select name="Tratamiento" id="tratamientoSelect">
+							<option value="estructural">O. Estructural</option>
+							<option value="craneal">O. Craneal</option>
+							<option value="visceral">O. Visceral</option>
+							<option value="pediatrica">O. Pediátrica</option>
+							<option value="masajes">F. Masajes</option>
+							<option value="agentesNaturales">F. Tratamientos con Agentes Naturales</option>
+							<option value="movilizaciones">F. Movilizaciones</option>
+							<option value="estiramientos">F. Estiramientos</option>
+							<option value="masaje">B. Masaje</option>
+							<option value="sauna">B. Sauna de Vapor</option>
+							<option value="pilates">B. Pilates</option>
+							<option value="pruebaRendimiento">D. Prueba de Rendimiento</option>
+							<option value="optimizacionEntrenamiento">D. Optimización de Entrenamiento</option>
+						</select><br>
+						<h3>Fecha y Hora</h3>
+						<label>Fecha:<input type="date" minlenght="10" maxlenght="10" value="" name="fecha" id="fecha"></label><br>
+						<select name="Hora" id="hora">
+							<option value="9:00">9:00</option>
+							<option value="9:30">9:30</option>
+							<option value="10:00">10:00</option>
+							<option value="10:30">10:30</option>
+							<option value="11:00">11:00</option>
+							<option value="11:30">11:30</option>
+							<option value="12:00">12:00</option>
+							<option value="12:30">12:30</option>
+							<option value="13:00">13:00</option>
+							<option value="16:00">16:00</option>
+							<option value="16:30">16:30</option>
+							<option value="17:00">17:00</option>
+							<option value="17:30">17:30</option>
+							<option value="18:00">18:00</option>
+							<option value="18:30">18:30</option>
+							<option value="19:00">19:00</option>
+							<option value="19:30">19:30</option>
+							<option value="20:00">20:00</option>
+							<option value="20:30">20:30</option>
+						</select><br>
+						<input class="enlaceboton" id="enlacebotonform" type='submit' name='citar' value='Enviar'>
+					</fieldset>
+				</form>
+				<p>Recibirá un SMS de confirmación, en caso de imposibilidad para la fecha y hora seleccionadas, lo llamaremos para concertar la cita.</p>
+			</div>
+			<div id="img">
+				<img src="Imagen/pedirCita.jpg">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div id="pie1">
+			<div id="iconos">
+				<a href="#"><img src="Imagen/facebook.png" alt="Icono Facebook" width="40px" height="40px"></a>
+				<a href="#"><img src="Imagen/whatsapp.png" alt="Icono Whatsapp" width="40px" height="40px"></a>
+				<a href="#"><img src="Imagen/telefono.png" alt="Icono Teléfono" width="40px" height="40px"></a>
+			</div>
+		</div>
+		<div id="pie2" class="pie">
+			<h1>Contacto:</h1>
+			<h2>888 88 88 88</h2>
+			<h2>666 66 66 66 (aceptamos citas por Whatsapp)</h2>
+			<h1>Dirección:</h1>
+			<h2>Calle Travesía de Vigo, Nº 113</h2>
+			<h3>Vigo, 36206, Pontevedra(España)</h3>
+			<h1>Horario:</h1>
+			<h2>Lunes a Viernes de 9:00-14:00 y de 16:00-22:00</h2>
+		</div>
+		<div id="pie3" class="pie">
+			<h1>DUDAS O CONSULTAS</h1>
+			<h2>Para cualquier duda o consulta cubra el siguiente formulario:</h2>
+			<form id='formulario' name='formulario' onsubmit="return validacion()" action="pedirCita.html" method="post">
+				<fieldset>
+					<input type='text' size=40 name='nombre' placeholder='Nombre'><br>
+					<input type='text' size=9 name='telefono' placeholder="Teléfono">Quieres que te llamemos?<input type='radio' name="nm1"><br>
+					<textarea name='texto' rows=5 cols=30 placeholder="Introduce tu consulta o duda"></textarea><br>
+					<input class="enlaceboton" id="enlacebotonform"type='submit' name='enviar' value='Enviar'>
+				</fieldset>
+			</form>
+		</div>
+	</footer>
+	<script>
+		function validacion() {
+			x = formulario.nombre.value
+			y = formulario.telefono.value
+			z = formulario.texto.value
+			if (x == "" || y == "") {
+				alert('Compruebe que ha introducido su nombre y su teléfono')
+				return false
+			}
+			if (z == "") {
+				alert("Debe rellenar el campo de texto con su consulta o duda.")
+				return false
+			}
+			alert('El formulario ha sido enviado con éxito, nos pondremos en contacto con usted lo antes posible.')
+			return (true)
+		}
+	</script>
+</body>
+</html>
